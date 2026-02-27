@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
     container_name: tingly-box
     ports:
-      - "8090:8090"
+      - "8080:8090"
     volumes:
       # Mount configuration directory
       - ./data/.tingly-box:/app/.tingly-box
@@ -35,7 +35,7 @@ services:
       dockerfile: Dockerfile
     container_name: tingly-box-dev
     ports:
-      - "8090:8090"
+      - "8080:8090"
     volumes:
       # Mount source code for development
       - .:/app
