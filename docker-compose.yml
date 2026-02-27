@@ -17,7 +17,7 @@ services:
       # Mount memory directory
       - ./data/memory:/app/memory
     environment:
-      - TINGLY_PORT=8080
+      - TINGLY_PORT=8090
       - TINGLY_HOST=0.0.0.0
       - TINGLY_DEBUG=false
     restart: unless-stopped
@@ -48,7 +48,7 @@ services:
       # Mount memory directory
       - ./data/memory:/app/memory
     environment:
-      - TINGLY_PORT=8080
+      - TINGLY_PORT=8090
       - TINGLY_HOST=0.0.0.0
       - TINGLY_DEBUG=true
     profiles:
